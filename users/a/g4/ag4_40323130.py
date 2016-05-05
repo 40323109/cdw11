@@ -302,7 +302,7 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
     # 放大 5 倍
     cgo.render(cmbr, x, y, 1, rot)
 
-O(0, 0, 0, 0, 0, "lightyellow", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 </script>
 
 <script type="text/python" src="/ag4_40323130/task1"></script>
