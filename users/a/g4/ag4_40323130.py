@@ -349,16 +349,16 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 
-cgo.setWorldCoords(-250, -250, 2000, 2000) 
+cgo.setWorldCoords(-250, -250, 500, 500) 
 
 # 決定要不要畫座標軸線
-#cgo.drawAxes(0, 240, 0, 240, {
-#    "strokeColor":"#aaaaaa",
-#   "fillColor": "#aaaaaa",
-#    "xTickInterval": 20,
-#    "xLabelInterval": 20,
-#    "yTickInterval": 20,
-#    "yLabelInterval": 20})
+cgo.drawAxes(0, 2000, 0, 500, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
         
 #cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 
@@ -591,10 +591,10 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    # 放大 1 倍
+    cgo.render(cmbr, x, y, 1, rot)
 
-O(350, 0, 0, 0, 0, "green", True, 4)
+O(0, 0, 0, 0, 0, "green", True, 4)
 '''
     return outstring
         
@@ -635,16 +635,16 @@ shapedefs = window.shapeDefs
 obj2d = JSConstructor(window.Obj2D)
 cgo = cango("plotarea")
 
-cgo.setWorldCoords(-250, -1750, 2750, 2750) 
+cgo.setWorldCoords(-250, -350, 500, 500) 
 
 # 決定要不要畫座標軸線
-#cgo.drawAxes(0, 240, 0, 240, {
-#    "strokeColor":"#aaaaaa",
-#   "fillColor": "#aaaaaa",
-#    "xTickInterval": 20,
-#    "xLabelInterval": 20,
-#    "yTickInterval": 20,
-#    "yLabelInterval": 20})
+cgo.drawAxes(0, 500, 0, 500, {
+    "strokeColor":"#aaaaaa",
+    "fillColor": "#aaaaaa",
+    "xTickInterval": 20,
+    "xLabelInterval": 20,
+    "yTickInterval": 20,
+    "yLabelInterval": 20})
         
 #cgo.drawText("使用 Cango 繪圖程式庫!", 0, 0, {"fontSize":60, "fontWeight": 1200, "lorg":5 })
 
@@ -877,10 +877,10 @@ def O(x, y, rx, ry, rot, color, border, linewidth):
 
     # 表示放大 3 倍
     #cgo.render(cmbr, x, y, 3, rot)
-    # 放大 5 倍
-    cgo.render(cmbr, x, y, 5, rot)
+    # 放大 1 倍
+    cgo.render(cmbr, x, y, 1, rot)
 
-O(1050, 0, 0, 0, 0, "green", True, 4)
+O(0, 20, 0, 0, 0, "green", True, 4)
 '''
     return outstring
     
